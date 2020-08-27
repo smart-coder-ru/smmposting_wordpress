@@ -125,9 +125,15 @@ class SMMP_Loader {
         echo 111;
     }
     public function activatePlugin() {
+
         $db = new SMMP_DB();
         $db->install();
         $this->initCaps();
+    }
+    public function deactivatePlugin() {
+
+        $db = new SMMP_DB();
+        $db->uninstall();
     }
 
     public function initCaps() {
