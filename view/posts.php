@@ -1,7 +1,7 @@
 <div id="content">
     <div class="page-header">
         <div class="container-fluid">
-            <?php include(plugin_dir_path(__FILE__) . 'menu.php'); ?>
+            <?php include(SMMP_PLUGIN_DIR . 'view/menu.php'); ?>
         </div>
     </div>
 
@@ -15,7 +15,7 @@
                 </div>
             <?php } ?>
             <div class="col-sm-12">
-                <?php if (isset($posts)) { ?>
+                <?php if (isset($posts) && !empty($posts)) { ?>
                     <?php foreach( $posts as $post ) { ?>
                         <div class="col-12 col-md-6 col-lg-3">
                             <div class="card">
@@ -80,13 +80,15 @@
                     <?php } ?>
                 <?php } else { ?>
                     <div class="text-center">
-                        <div class="row">
+                        <div>
                             <a href="<?php echo $add_post_link; ?>" title="<?php echo $button_add_post;?>">
-                                <img src="<?php echo SMMP_PLUGIN_URL . ('smmposting/view/image/smm.gif'); ?>">
+                                <img src="<?php echo SMMP_PLUGIN_URL . ('view/image/smm.gif'); ?>">
                             </a>
                         </div>
 
-                        <a href="<?php echo $add_post_link; ?>" style="margin-bottom:2rem;" class="btn btn-success btn-md"><i class="fa fa-plus"></i> <span class="hidden-xs"><?php echo $button_add_post;?></span></a>
+                        <div>
+                            <a href="<?php echo $add_post_link; ?>" style="margin-bottom:2rem;" class="btn btn-success btn-md"><i class="fa fa-plus"></i> <span class="hidden-xs"><?php echo $button_add_post;?></span></a>
+                        </div>
                     </div>
                 <?php } ?>
             </div>

@@ -1,7 +1,7 @@
 <div id="content">
     <div class="page-header">
         <div class="container-fluid">
-            <?php include(plugin_dir_path(__FILE__) . 'menu.php'); ?>
+            <?php include(SMMP_PLUGIN_DIR . 'view/menu.php'); ?>
         </div>
     </div>
 
@@ -86,13 +86,15 @@
                             <?php } ?>
                     <?php } else { ?>
                         <div class="text-center">
-                            <div class="row">
+                            <div>
                                 <a href="<?php echo $add_project_link; ?>" title="<?php echo $button_add_project;?>">
-                                    <img src="<?php echo SMMP_PLUGIN_URL . ('smmposting/view/image/smm.gif'); ?>">
+                                    <img src="<?php echo SMMP_PLUGIN_URL . ('view/image/smm.gif'); ?>">
                                 </a>
                             </div>
 
-                            <a href="<?php echo $add_project_link; ?>" style="margin-bottom:2rem;" class="btn btn-success btn-md"><i class="fa fa-plus"></i> <span class="hidden-xs"><?php echo $button_add_project;?></span></a>
+                            <div>
+                                <a href="<?php echo $add_project_link; ?>" style="margin-bottom:2rem;" class="btn btn-success btn-md"><i class="fa fa-plus"></i> <span class="hidden-xs"><?php echo $button_add_project;?></span></a>
+                            </div>
                         </div>
                     <?php } ?>
                 </div>
