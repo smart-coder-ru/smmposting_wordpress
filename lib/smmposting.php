@@ -280,7 +280,7 @@ class SmmpostingWordpress
             case 'twitter':
                 $sql = "SELECT p1.post_id, p1.content, p1.twitter,";
                 $sql .= "(SELECT tw_oauth_token FROM ".$this->wpdb->base_prefix."smmposting_accounts WHERE account_id = p2.tw_account_id) as tw_oauth_token,
-                         (SELECT tw_oauth_verifier FROM ".$this->wpdb->base_prefix."smmposting_accounts WHERE account_id = p2.tw_account_id) as tw_oauth_token_secret,
+                         (SELECT tw_oauth_token_secret FROM ".$this->wpdb->base_prefix."smmposting_accounts WHERE account_id = p2.tw_account_id) as tw_oauth_token_secret,
                          (SELECT account_name FROM ".$this->wpdb->base_prefix."smmposting_accounts WHERE account_id = p2.tb_account_id) as account_name";
                 break;
             case 'tumblr':

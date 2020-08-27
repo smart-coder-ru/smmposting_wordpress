@@ -584,7 +584,7 @@ class SmmpostingModel
 									status = '" . (int)1 . "',
 									account_name = '" . $this->db->escape($name) . "', 
 									tw_oauth_token = '" . $this->db->escape($oauth_token) . "', 
-									tw_oauth_verifier = '" . $this->db->escape($oauth_verifier) . "', 
+									tw_oauth_token_secret = '" . $this->db->escape($oauth_verifier) . "', 
 									social = 'twitter',
 									date_added = NOW()
 								";
@@ -597,7 +597,7 @@ class SmmpostingModel
 									account_name = '" . $this->db->escape($name) . "', 
 									status = '" . (int)1 . "',
                                     tw_oauth_token = '" . $this->db->escape($oauth_token) . "', 
-									tw_oauth_verifier = '" . $this->db->escape($oauth_verifier) . "'
+									tw_oauth_token_secret = '" . $this->db->escape($oauth_verifier) . "'
 								WHERE
 									account_name = '" . $this->db->escape($name) . "' 
 								AND

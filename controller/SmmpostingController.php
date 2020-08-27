@@ -322,25 +322,24 @@ class SmmpostingController {
         |--------------------------------------------------------------------------
         |
         */
+
         if (isset($this->request->get['tw_auth'])) {
             $oauth_token = $this->request->get['oauth_token'];
             $oauth_verifier = $this->request->get['oauth_verifier'];
+            $oauth_token_secret = $this->request->get['oauth_token_secret'];
             #Response from SMM-posting
             $this->smmposting = new Smmposting($this->getApiToken());
             $response = $this->smmposting->tw_info($oauth_token,$oauth_verifier);
-
             if (isset($response->error)) {
                 $_SESSION['error_warning'] = $this->getFromLanguage('smmposting_error_9'). $response->error;
             } else {
                 if (isset($response->screen_name)) {
                     $name = $response->screen_name;
-
-                    $this->smmposting_model->save_tw($name, $oauth_token, $oauth_verifier);
+                    $this->smmposting_model->save_tw($name, $oauth_token, $oauth_token_secret);
                 } else {
                     $_SESSION['error_warning'] = $this->getFromLanguage('smmposting_error_10');
                 }
             }
-
         }
 
         /*

@@ -3,7 +3,7 @@
 Plugin Name: SMMposting
 Plugin URI:  https://smm-posting.ru
 Description: Posting in social networks
-Version:     1.0.0
+Version:     1.0.1
 Author:      smartcoder, vladgaus
 License: GPL2+
 */

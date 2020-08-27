@@ -24,7 +24,7 @@ class SMMP_DB {
         `fb_access_token` varchar(255) NOT NULL,
         `fb_user_id` varchar(255) NOT NULL,
         `tw_oauth_token` varchar(255) NOT NULL,
-        `tw_oauth_verifier` varchar(255) NOT NULL,
+        `tw_oauth_token_secret` varchar(255) NOT NULL,
         `tb_oauth_token` varchar(255) NOT NULL,
         `tb_oauth_verifier` varchar(255) NOT NULL,
         `tb_oauth_token_secret` varchar(255) NOT NULL,
