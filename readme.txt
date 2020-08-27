@@ -34,6 +34,14 @@ The SMMposting Plugin is available in the following language versions
 * Belarusian
 * Kazakh
 * Ukrainian
+* German
+* Spanish
+* French
+* Italian
+* Romanian
+* Bulgarian
+* Czech
+* Polish
 
 = Benefits from using SMMPOSTING =
 
