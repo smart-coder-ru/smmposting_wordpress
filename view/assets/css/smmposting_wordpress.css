@@ -1,0 +1,26 @@
+#wpcontent {
+    /*height: 100%;*/
+    padding-left: 0px!important;
+}
+
+.php-error #adminmenuback, .php-error #adminmenuwrap {
+    margin-top: 0em!important;
+}
+
+.card {
+    all: unset;
+}
+.nav-tabs {
+    margin-bottom: 2rem!important;
+}
+.nav-tabs > li.active > a {
+    background-color: #4fa2d0!important;
+}
+
+.wp-core-ui select {
+    max-width: unset!important;
+}
+
+.smm-project {
+    background-image: url(../../image/bg_image.png) !important;
+}
