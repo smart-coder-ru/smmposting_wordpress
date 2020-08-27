@@ -1,9 +1,4 @@
 <?php
-/*
-Description: Posting in social networks
-Version:     1.0.0
-Author:      SmmPosting
- */
 
 class SmmpostingController {
 
@@ -69,8 +64,7 @@ class SmmpostingController {
     public function config()
     {
 
-        $plugin_data = get_plugin_data( __FILE__ );
-        $data['version'] = isset($plugin_data['Version']) ? $plugin_data['Version'] : null;
+        $data['version'] = SMMP_PLUGIN_VERSION;
         $data['route'] = isset($this->request->get['route']) ? $this->request->get['route'] : '';
 
         switch ($data['route']) {
