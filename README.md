@@ -32,6 +32,7 @@
 <p>✅ Vk.com (vk.com)<br />
 ✅ Odnoklassniki (ok.ru)<br />
 ✅ Telegram (telegram.org)<br />
+✅ Instagram (instagram.com)<br />
 ✅ Facebook (facebook.com)<br />
 ✅ Tumblr (tumblr.com)<br />
 ✅ Twitter (twitter.com)</p>
@@ -49,6 +50,17 @@
 ✅ Belarusian<br />
 ✅ Kazakh<br />
 ✅ Ukrainian<br />
+✅ Bulgarian<br />
+✅ Czech<br />
+✅ German<br />
+✅ Spanish<br />
+✅ French<br />
+✅ Italian<br />
+✅ Polish<br />
+✅ Romanian<br />
+
+
+
 </p>
 
 

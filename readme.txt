@@ -8,7 +8,7 @@ Stable tag: 1.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.ru.html
 
-Autopost, schedule and share blog posts and contents on social media, pages & groups on Vkontakte, Odnoklassniki, Telegram, Instagram, Facebook, Twitter, Tumblr.
+Posting on Vkontakte, Odnoklassniki, Telegram, Instagram, Facebook, Twitter, Tumblr.
 
 == Description ==
 **Social Media Auto-Posting and Scheduling Plugin for WordPress Sites and Blogs.**
