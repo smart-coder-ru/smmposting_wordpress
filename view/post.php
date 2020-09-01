@@ -1,7 +1,7 @@
 <div id="content">
     <div class="page-header">
         <div class="container-fluid">
-            <?php include(plugin_dir_path(__FILE__) . 'menu.php'); ?>
+            <?php include(SMMP_PLUGIN_DIR . 'view/menu.php'); ?>
         </div>
     </div>
 
