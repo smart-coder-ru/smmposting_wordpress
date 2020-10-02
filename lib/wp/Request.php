@@ -1,7 +1,4 @@
 <?php
-
-
-
 /**
  * Request class for Sanitize
  */

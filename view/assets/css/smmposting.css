@@ -108,7 +108,7 @@
 }
 
 .product-arrow i {
-    background-image: url(../../../image/smmposting/sprite.cf7ea511430611c78ef17b5c7abdaa7d.png);
+    background-image: url(../../image/sprite.png);
     background-position: -116px -64px;
     width: 82px;
     height: 29px;
@@ -142,7 +142,7 @@
 }
 
 .product-arrow-up i {
-    background-image: url(../../../image/smmposting/sprite.cf7ea511430611c78ef17b5c7abdaa7d.png);
+    background-image: url(../../image/sprite.png);
     background-position: -116px -64px;
     width: 82px;
     height: 29px;
