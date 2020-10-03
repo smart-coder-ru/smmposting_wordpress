@@ -63,7 +63,7 @@
                                     <?php if ($post['tw']) { ?><a onclick="QuickPost('<?php echo $post["post_id"]; ?>','tw', this)" class="btn btn-success social text-white mr-1 mb-1"><i class="fab fa-twitter"></i></a><?php } ?>
                                 </div>
 
-                                <div class="row">
+                                <div class="row mt-2">
                                     <div class="col-sm-8"> <a class="btn btn-info w-100" href="<?php echo $edit_post_link; ?>&id=<?php echo $post['post_id']; ?>"><i class="fa fa-eye"></i> <?php echo $text_preview; ?></a></div>
                                     <div class="col-sm-4"> <a class="btn btn-danger w-100" href="<?php echo $delete_post_link; ?>&id=<?php echo $post['post_id']; ?>"><i class="fa fa-trash"></i></a></a></div>
                                 </div>

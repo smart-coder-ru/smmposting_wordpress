@@ -419,3 +419,8 @@ ul.nav.nav-tabs {
     border-bottom: unset;
 }
 
+.row-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+}

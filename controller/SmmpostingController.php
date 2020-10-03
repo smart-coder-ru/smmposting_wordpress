@@ -29,7 +29,7 @@ class SmmpostingController {
     }
     public function checkInstallApi()
     {
-        if ($this->request->get['route'] != 'welcome') {
+        if (isset($this->request->get['route']) && $this->request->get['route'] != 'welcome') {
             $this->checkApiToken();
         }
     }
@@ -110,7 +110,7 @@ class SmmpostingController {
         $data['version'] = SMMP_PLUGIN_VERSION;
         $data['route'] = isset($this->request->get['route']) ? $this->request->get['route'] : '';
 
-        switch ($this->request->get['route']) {
+        switch ($data['route']) {
             case 'marketing/smmposting/post':
             case 'marketing/smmposting/posts':
                 $heading_title = $this->language->get('text_posts');
@@ -223,7 +223,8 @@ class SmmpostingController {
     {
         if ($this->request->server['REQUEST_METHOD'] == 'POST') {
             if (isset($this->request->post['config']['api_token'])) {
-                $this->checkApiToken($this->request->post['config']['api_token']);
+                $res = $this->checkApiToken($this->request->post['config']['api_token']);
+                if ($res) $this->response->redirect(admin_url().'admin.php?page=smmposting&route=posts');
             }
         }
 
@@ -270,9 +271,10 @@ class SmmpostingController {
     }
     public function deleteAccount() {
 
-        if( isset($this->request->post['account_id']) ) {
+        if( isset($this->request->get['account_id']) ) {
             //	Send to SMMposting
-            $res = $this->smmposting->api('account_delete/'.$this->request->post['account_id'],[],'DELETE');
+            $res = $this->smmposting->api('account_delete/'.$this->request->get['account_id'],[],'DELETE');
+
             //	Response
             if (isset($res->result->success) && $res->error == "N") {
                 $_SESSION['success'] = $this->language->get('account_deleted');
