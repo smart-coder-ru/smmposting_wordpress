@@ -30,7 +30,6 @@ The SMMposting Plugin is available in the following language versions
 
 * English
 * Russian
-* Armenian
 * Belarusian
 * Kazakh
 * Ukrainian
