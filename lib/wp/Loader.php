@@ -14,7 +14,6 @@ class SMMP_Loader {
 
     private function call_public_hooks()
     {
-        add_action('init', array($this, 'cron'), 1);
     }
     public function call_global_hooks()
     {
@@ -44,32 +43,32 @@ class SMMP_Loader {
 
             add_submenu_page(
                 'smmposting',
-                $SMMP_Language->getFromLanguage('text_accounts'),
-                $SMMP_Language->getFromLanguage('text_accounts'),
+                $SMMP_Language->get('text_accounts'),
+                $SMMP_Language->get('text_accounts'),
                 'manage_options',
                 'smmposting&route=accounts',
                 'accounts'
             );
 
             add_submenu_page('smmposting',
-                $SMMP_Language->getFromLanguage('text_projects'),
-                $SMMP_Language->getFromLanguage('text_projects'),
+                $SMMP_Language->get('text_projects'),
+                $SMMP_Language->get('text_projects'),
                 'manage_options',
                 'smmposting&route=projects',
                 'projects'
             );
 
             add_submenu_page('smmposting',
-                $SMMP_Language->getFromLanguage('text_posts'),
-                $SMMP_Language->getFromLanguage('text_posts'),
+                $SMMP_Language->get('text_posts'),
+                $SMMP_Language->get('text_posts'),
                 'manage_options',
                 'smmposting&route=posts',
                 'posts'
             );
 
             add_submenu_page('smmposting',
-                $SMMP_Language->getFromLanguage('text_settings'),
-                $SMMP_Language->getFromLanguage('text_settings'),
+                $SMMP_Language->get('text_settings'),
+                $SMMP_Language->get('text_settings'),
                 'manage_options',
                 'smmposting&route=settings',
                 'posts'
@@ -120,20 +119,10 @@ class SMMP_Loader {
         }
     }
 
-    public function SMMP_accounts()
-    {
-        echo 111;
-    }
     public function activatePlugin() {
-
-        $db = new SMMP_DB();
-        $db->install();
         $this->initCaps();
     }
     public function deactivatePlugin() {
-
-        $db = new SMMP_DB();
-        $db->uninstall();
     }
 
     public function initCaps() {

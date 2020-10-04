@@ -24,3 +24,59 @@
 .smm-project {
     background-image: url(../../image/bg_image.png) !important;
 }
+
+.socials-grey i.fab.fa-vk:hover {
+    color:#45668e;
+}
+
+.socials-grey i.fab.fa-odnoklassniki:hover {
+    color:#ed812b;
+}
+
+.socials-grey i.fab.fa-send:hover {
+    color:#0088cc;
+}
+
+.socials-grey i.fab.fa-facebook:hover {
+    color:#3b5998;
+}
+
+.socials-grey i.fab.fa-instagram:hover {
+    color:#e1306c;
+}
+
+.socials-grey i.fab.fa-tumblr:hover {
+    color:#35465c;
+}
+
+.socials-grey i.fab.fa-twitter:hover {
+    color:#1da1f2;
+}
+
+.socials i.fab.fa-vk {
+    color:#45668e;
+}
+
+.socials i.fab.fa-odnoklassniki {
+    color:#ed812b;
+}
+
+.socials i.fab.fa-send {
+    color:#0088cc;
+}
+
+.socials i.fab.fa-facebook {
+    color:#3b5998;
+}
+
+.socials i.fab.fa-instagram {
+    color:#e1306c;
+}
+
+.socials i.fab.fa-tumblr {
+    color:#35465c;
+}
+
+.socials i.fab.fa-twitter {
+    color:#1da1f2;
+}

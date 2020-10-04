@@ -46,7 +46,6 @@
 <p>
 ✅ English<br />
 ✅ Russian<br />
-✅ Armenian<br />
 ✅ Belarusian<br />
 ✅ Kazakh<br />
 ✅ Ukrainian<br />
